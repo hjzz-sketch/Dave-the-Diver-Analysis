@@ -87,6 +87,22 @@
       .nav-links a:hover {
         color: var(--ink);
       }
+      .nav-pdf {
+        font-family: "DM Mono", monospace;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        color: var(--accent);
+        text-decoration: none;
+        border: 1px solid var(--accent);
+        padding: 3px 10px;
+        border-radius: 3px;
+        transition: all 0.15s;
+        white-space: nowrap;
+      }
+      .nav-pdf:hover {
+        background: var(--accent);
+        color: #fff;
+      }
 
       /* header */
       header {
@@ -570,7 +586,12 @@
   <body>
     <nav>
       <div class="nav-inner">
-        <span class="nav-logo">Dave the Diver · 分析 · 张欣悦作</span>
+        <span class="nav-logo"
+          >Dave the Diver · 分析 ·
+          <a href="张欣悦_游戏策划.pdf" target="_blank" class="nav-pdf"
+            >张欣悦 ↓ PDF</a
+          ></span
+        >
         <div class="nav-links">
           <a href="#flow">系统架构</a>
           <a href="#data">数据整理</a>
